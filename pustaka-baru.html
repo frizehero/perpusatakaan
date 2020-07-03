@@ -352,7 +352,7 @@ License: You must have a valid license purchased only from themeforest(the above
 											</li>
 											<ul class="menu-nav">
 											<li class="menu-item menu-item-active" aria-haspopup="true">
-												<a href="pustaka-baru.html" class="menu-link">
+												<a href="daftar-pustaka.html" class="menu-link">
 													<span class="menu-text">Pustaka</span>
 												</a>
 											</li>
@@ -380,59 +380,9 @@ License: You must have a valid license purchased only from themeforest(the above
 								<!--begin::Toolbar-->
 								<div class="d-flex align-items-center py-3">
 									<!--begin::Dropdown-->
-									<div class="dropdown dropdown-inline" data-toggle="tooltip" title="Quick actions" data-placement="left">
-										<a href="#" class="btn btn-dark font-weight-bold px-6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Create</a>
-										<div class="dropdown-menu p-0 m-0 dropdown-menu-anim-up dropdown-menu-md dropdown-menu-right">
-											<!--begin::Navigation-->
-											<ul class="navi navi-hover">
-												<li class="navi-header font-weight-bold py-4">
-													<span class="font-size-lg">Choose Label:</span>
-													<i class="flaticon2-information icon-md text-muted" data-toggle="tooltip" data-placement="right" title="Click to learn more..."></i>
-												</li>
-												<li class="navi-separator mb-3 opacity-70"></li>
-												<li class="navi-item">
-													<a href="#" class="navi-link">
-														<span class="navi-text">
-															<span class="label label-xl label-inline label-light-success">Customer</span>
-														</span>
-													</a>
-												</li>
-												<li class="navi-item">
-													<a href="#" class="navi-link">
-														<span class="navi-text">
-															<span class="label label-xl label-inline label-light-danger">Partner</span>
-														</span>
-													</a>
-												</li>
-												<li class="navi-item">
-													<a href="#" class="navi-link">
-														<span class="navi-text">
-															<span class="label label-xl label-inline label-light-warning">Suplier</span>
-														</span>
-													</a>
-												</li>
-												<li class="navi-item">
-													<a href="#" class="navi-link">
-														<span class="navi-text">
-															<span class="label label-xl label-inline label-light-primary">Member</span>
-														</span>
-													</a>
-												</li>
-												<li class="navi-item">
-													<a href="#" class="navi-link">
-														<span class="navi-text">
-															<span class="label label-xl label-inline label-light-dark">Staff</span>
-														</span>
-													</a>
-												</li>
-												<li class="navi-separator mt-3 opacity-70"></li>
-												<li class="navi-footer py-4">
-													<a class="btn btn-clean font-weight-bold btn-sm" href="#">
-													<i class="ki ki-plus icon-sm"></i>Add new</a>
-												</li>
-											</ul>
-											<!--end::Navigation-->
-										</div>
+									<div class="menu-item menu-link" data-toggle="tooltip" data-placement="left">
+										<a href="daftar-pustaka.html" class="btn btn-dark font-weight-bold px-6">Kembali</a>
+										
 									</div>
 									<!--end::Dropdown-->
 								</div>
@@ -465,6 +415,8 @@ License: You must have a valid license purchased only from themeforest(the above
 									</div>
 									<div class="alert-text"><h2>Pustaka Baru</h2></div>
 								</div>
+							
+
 								<!--end::Notice-->
 						<!--begin::Entry-->
 						<div class="d-flex flex-column-fluid">
@@ -478,8 +430,7 @@ License: You must have a valid license purchased only from themeforest(the above
 										<h3 class="card-title">Informasi</h3>
 										<div class="card-toolbar">
 											<div class="example-tools justify-content-center">
-												<span class="example-toggle" data-toggle="tooltip" title="View code"></span>
-											</div>
+																							</div>
 										</div>
 									</div>
 									<!--begin::Form-->
@@ -507,6 +458,49 @@ License: You must have a valid license purchased only from themeforest(the above
 												<option>..</option>
 												
 												</select>
+											</div>
+											<div>
+												
+<!-- Button trigger modal-->
+<button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
+     <i class="icon-md text-light flaticon2-add-square"></i>
+</button>
+
+<!-- Modal-->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Tambah Katalog</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i aria-hidden="true" class="ki ki-close"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+               											<div class="form-group row">
+												<label class="col-form-label text-left col-lg-4 col-sm-2">Kode Buku</label>
+												<div class="col-lg-6 col-md-6 col-sm-2">
+													<input type="text" class="form-control" placeholder="123" />
+												</div>
+												
+											</div>
+																						<div class="form-group row">
+												<label class="col-form-label text-left col-lg-4 col-sm-2">Nama Buku</label>
+												<div class="col-lg-6 col-md-6 col-sm-2">
+													<input type="text" class="form-control" placeholder="Nama Buku" />
+												</div>
+												
+											</div>
+            </div>
+            <div class="modal-footer">
+            	<a href="pustaka-baru.html">
+                <button type="button" class="btn btn-light-primary font-weight-bold" data-dismiss="modal">Tutup</button>
+                <button type="button" class="btn btn-primary font-weight-bold">Simpan</button>
+            </a>
+            </div>
+        </div>
+    </div>
+</div>
 														</div>
 													</div>
 											
@@ -519,6 +513,76 @@ License: You must have a valid license purchased only from themeforest(the above
 												
 												</select>
 											</div>
+											<div>
+											<!-- Button trigger modal-->
+<button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal2">
+     <i class="icon-md text-light flaticon2-add-square"></i>
+</button>
+
+<!-- Modal-->
+<div class="modal fade" id="exampleModal2" tabindex="-2" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel2">Tambah Penulis</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i aria-hidden="true" class="ki ki-close"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                											<div class="form-group row">
+												<label class="col-form-label text-left col-lg-4 col-sm-2">Kode</label>
+												<div class="col-lg-6 col-md-6 col-sm-2">
+													<input type="text" class="form-control" placeholder="Kode" />
+												</div>
+												
+											</div>											<div class="form-group row">
+												<label class="col-form-label text-left col-lg-4 col-sm-2">Gelar Depan</label>
+												<div class="col-lg-6 col-md-6 col-sm-2">
+													<input type="text" class="form-control" placeholder="Gelar Depan" />
+												</div>
+												
+											</div>											<div class="form-group row">
+												<label class="col-form-label text-left col-lg-4 col-sm-2">Nama</label>
+												<div class="col-lg-6 col-md-6 col-sm-2">
+													<input type="text" class="form-control" placeholder="Nama" />
+												</div>
+												
+											</div>											<div class="form-group row">
+												<label class="col-form-label text-left col-lg-4 col-sm-2">Gelar Belakang</label>
+												<div class="col-lg-6 col-md-6 col-sm-2">
+													<input type="text" class="form-control" placeholder="Gelar Belakang" />
+												</div>
+												
+											</div>											<div class="form-group row">
+												<label class="col-form-label text-left col-lg-4 col-sm-2">Kontak</label>
+												<div class="col-lg-6 col-md-6 col-sm-2">
+													<input type="text" class="form-control" placeholder="Kontak" />
+												</div>
+												
+											</div>											<div class="form-group row">
+												<label class="col-form-label text-left col-lg-4 col-sm-2">Biografi</label>
+												<div class="col-lg-6 col-md-6 col-sm-2">
+													<input type="text" class="form-control" placeholder="Biografi" />
+												</div>
+												
+											</div>											<div class="form-group row">
+												<label class="col-form-label text-left col-lg-4 col-sm-2">Keterangan</label>
+												<div class="col-lg-6 col-md-6 col-sm-2">
+													<input type="text" class="form-control" placeholder="Keterangan" />
+												</div>
+												
+											</div>
+            </div>
+            <div class="modal-footer">
+                <a href="pustaka-baru.html">
+                <button type="button" class="btn btn-light-primary font-weight-bold" data-dismiss="modal">Tutup</button>
+                <button type="button" class="btn btn-primary font-weight-bold">Simpan</button>
+            </a>            </div>
+        </div>
+    </div>
+</div>
+											</div>
 											</div>
 											
 											  <div class="form-group row">
@@ -528,6 +592,90 @@ License: You must have a valid license purchased only from themeforest(the above
 												<option>..</option>
 												
 												</select>
+												</div>
+											<div>
+											<!-- Button trigger modal-->
+<button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal3">
+     <i class="icon-md text-light flaticon2-add-square"></i>
+</button>
+
+<!-- Modal-->
+<div class="modal fade" id="exampleModal3" tabindex="-3" role="dialog" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel3">Tambah Penerbit</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i aria-hidden="true" class="ki ki-close"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+               											<div class="form-group row">
+												<label class="col-form-label text-left col-lg-4 col-sm-2">Kode</label>
+												<div class="col-lg-6 col-md-6 col-sm-2">
+													<input type="text" class="form-control" placeholder="Kode" />
+												</div>
+												
+											</div>											<div class="form-group row">
+												<label class="col-form-label text-left col-lg-4 col-sm-2">Nama</label>
+												<div class="col-lg-6 col-md-6 col-sm-2">
+													<input type="text" class="form-control" placeholder="Nama" />
+												</div>
+												
+											</div>											<div class="form-group row">
+												<label class="col-form-label text-left col-lg-4 col-sm-2">Alamat</label>
+												<div class="col-lg-6 col-md-6 col-sm-2">
+													<input type="text" class="form-control" placeholder="Alamat" />
+												</div>
+												
+											</div>											<div class="form-group row">
+												<label class="col-form-label text-left col-lg-4 col-sm-2">Telepon</label>
+												<div class="col-lg-6 col-md-6 col-sm-2">
+													<input type="text" class="form-control" placeholder="Telepon" />
+												</div>
+												
+											</div>											<div class="form-group row">
+												<label class="col-form-label text-left col-lg-4 col-sm-2">Email</label>
+												<div class="col-lg-6 col-md-6 col-sm-2">
+													<input type="text" class="form-control" placeholder="Email" />
+												</div>
+												
+											</div>											<div class="form-group row">
+												<label class="col-form-label text-left col-lg-4 col-sm-2">Fax</label>
+												<div class="col-lg-6 col-md-6 col-sm-2">
+													<input type="text" class="form-control" placeholder="Fax" />
+												</div>
+												
+											</div>											<div class="form-group row">
+												<label class="col-form-label text-left col-lg-4 col-sm-2">Website</label>
+												<div class="col-lg-6 col-md-6 col-sm-2">
+													<input type="text" class="form-control" placeholder="Website" />
+												</div>
+												
+											</div>											<div class="form-group row">
+												<label class="col-form-label text-left col-lg-4 col-sm-2">Kontak</label>
+												<div class="col-lg-6 col-md-6 col-sm-2">
+													<input type="text" class="form-control" placeholder="Kontak" />
+												</div>
+												
+											</div>
+																						<div class="form-group row">
+												<label class="col-form-label text-left col-lg-4 col-sm-2">Keterangan</label>
+												<div class="col-lg-6 col-md-6 col-sm-2">
+													<input type="text" class="form-control" placeholder="Keterangan" />
+												</div>
+												
+											</div>
+            </div>
+            <div class="modal-footer">
+               <a href="pustaka-baru.html">
+                <button type="button" class="btn btn-light-primary font-weight-bold" data-dismiss="modal">Tutup</button>
+                <button type="button" class="btn btn-primary font-weight-bold">Simpan</button>
+            </a>
+            </div>
+        </div>
+    </div>
+</div>
 											</div>
 											  </div>
 
@@ -664,7 +812,7 @@ License: You must have a valid license purchased only from themeforest(the above
 												<h3 class="card-title">Alokasi Jumlah</h3>
 												<div class="card-toolbar">
 													<div class="example-tools justify-content-center">
-														<span class="example-toggle" data-toggle="tooltip" title="View code"></span>
+														
 													</div>
 												</div>
 											</div>
@@ -699,7 +847,7 @@ License: You must have a valid license purchased only from themeforest(the above
 									
 										<div class="card-toolbar">
 											<div class="example-tools justify-content-center">
-												<span class="example-toggle" data-toggle="tooltip" title="View code"></span>
+												
 											</div>
 										</div>
 									</div>
@@ -737,7 +885,7 @@ License: You must have a valid license purchased only from themeforest(the above
 									
 										<div class="card-toolbar">
 											<div class="example-tools justify-content-center">
-												<span class="example-toggle" data-toggle="tooltip" title="View code"></span>
+												
 											</div>
 										</div>
 									</div>
