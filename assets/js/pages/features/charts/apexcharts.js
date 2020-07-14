@@ -117,13 +117,13 @@ var KTApexChartsDemo = function () {
 		const apexChart = "#chart_3";
 		var options = {
 			series: [{
-				name: 'Net Profit',
+				name: 'Anggota',
 				data: [44, 55, 57, 56, 61, 58, 63, 60, 66]
 			}, {
-				name: 'Revenue',
+				name: 'Siswa',
 				data: [76, 85, 101, 98, 87, 105, 91, 114, 94]
 			}, {
-				name: 'Free Cash Flow',
+				name: 'Luar Sekolah',
 				data: [35, 41, 36, 26, 45, 48, 52, 53, 41]
 			}],
 			chart: {
@@ -150,7 +150,7 @@ var KTApexChartsDemo = function () {
 			},
 			yaxis: {
 				title: {
-					text: '$ (thousands)'
+					text: ''
 				}
 			},
 			fill: {
@@ -159,7 +159,7 @@ var KTApexChartsDemo = function () {
 			tooltip: {
 				y: {
 					formatter: function (val) {
-						return "$ " + val + " thousands"
+						return " " + val + " "
 					}
 				}
 			},
